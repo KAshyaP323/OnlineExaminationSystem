@@ -1,0 +1,38 @@
+###
+GET http://localhost:8000/exam_questions/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/exam_questions/
+Content-Type: application/json
+
+{
+    "question" : "DBMS stans for:",
+    "option_a" : "Database Management System",
+    "option_b" : "Datablock Management System",
+    "option_c" : "Databook Management System",
+    "option_d" : "Data Management System",
+    "correct_answer" : "Database Management System" 
+}
+
+###
+GET http://localhost:8000/exam_questions/7
+Accept-type: application/json
+
+###
+PUT http://127.0.0.1:8000/exam_questions/2
+Content-Type: application/json
+
+{
+    "question" : "Starting index of list is?",
+    "option_a": "-1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "0",
+    "correct_answer": "0"
+}
+
+###
+DELETE http://127.0.0.1:8000/exam_questions/4
+Accept: application/json
